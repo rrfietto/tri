@@ -20,6 +20,8 @@ public:
     virtual void renderEntity() override;
     virtual void attack() override;
 
+    void followPlayer(Vector2 playerPos);
+
     // getters
     Rectangle getRec();
     float getHeight();

@@ -16,6 +16,8 @@ public:
     virtual void renderEntity() = 0;
     virtual void attack() = 0;
 
+    void followPlayer(Vector2 playerPos);
+
     // constructor and destructor
     Entity(Vector2 initPos);
     virtual ~Entity();

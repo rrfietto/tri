@@ -17,6 +17,8 @@ int main()
     while (!WindowShouldClose())
     {
         p.computeMovement();
+        e.followPlayer(p.getPos());
+        e.computeMovement();
         if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
         {
             p.attack();
